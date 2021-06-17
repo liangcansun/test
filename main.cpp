@@ -4,7 +4,7 @@
 
 using namespace std;
 void test(){
-    std::cout<<"ceshi"<<std::endl;
+    std::cout<<"ceshiww"<<std::endl;
     this_thread::sleep_for(chrono::milliseconds(10));
 }
 int main() {
