@@ -8,9 +8,10 @@ void test(){
     this_thread::sleep_for(chrono::milliseconds(10));
 }
 int main() {
-    std::cout << "Hello, Wssorld!" << std::endl;
+    std::cout << "Hello, Wssorldsds!" << std::endl;
     thread t1(test);
     t1.join();
+
 
     return 0;
 }
