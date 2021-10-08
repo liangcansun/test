@@ -12,6 +12,5 @@ int main() {
     thread t1(test);
     t1.join();
 
-""恶犬委屈委屈委屈呃呃
     return 0;
 }
