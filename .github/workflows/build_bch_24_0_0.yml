@@ -9,6 +9,7 @@ env:
 
 jobs:
   build:
+    runs-on: ubuntu-latest
     env:
       patch_version: ${{ github.run_number }}
       docker_registry_aliyun_beijing: registry.cn-beijing.aliyuncs.com
