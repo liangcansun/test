@@ -25,41 +25,4 @@ jobs:
         uses: tiloio/slack-webhook-action@v1.0.1
         with:
           slack_web_hook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
-          slack_json: '{
-                               "blocks": [
-                                   {
-                                       "type": "section",
-                                       "text": {
-                                           "type": "mrkdwn",
-                                           "text": ":smirk: *BCH 节点构建完毕*"
-                                       }
-                                   },
-                                   {
-                                       "type": "context",
-                                       "elements": [
-                                           {
-                                               "type": "plain_text",
-                                               "text": "北京仓库: ${{ env.docker_registry_aliyun_beijing }}/${{ env.version_tag }}"
-                                           }
-                                       ]
-                                   },
-                                   {
-                                       "type": "context",
-                                       "elements": [
-                                           {
-                                               "type": "plain_text",
-                                               "text": "香港仓库: ${{ env.docker_registry_aliyun_hongkong }}/${{ env.version_tag }}"
-                                           }
-                                       ]
-                                   },
-                                   {
-                                       "type": "context",
-                                       "elements": [
-                                           {
-                                               "type": "plain_text",
-                                               "text": "美东仓库: ${{ env.docker_registry_aliyun_USA }}/${{ env.version_tag }}"
-                                           }
-                                       ]
-                                   }
-                               ]
-                           }'
+          slack_json: '{"blocks":[{"type":"divider"},{"type":"section","text":{"type":"mrkdwn","text":"*Host*:ali.bj.btc-r5.common.06.poolin.com"}},{"type":"section","text":{"type":"mrkdwn","text":"*Progress*:bj6.ss01.01"}},{"type":"section","text":{"type":"mrkdwn","text":"\344\275\240\345\245\275, \346\265\213\350\257\225"}},{"type":"divider"}]}'
