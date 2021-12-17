@@ -21,7 +21,7 @@ jobs:
           echo "version_tag=poolin/bch:${{ env.major_version }}.${{ env.minor_version }}" >> $GITHUB_ENV
           echo "repository=${GITHUB_REPOSITORY#iblockin/}" >> $GITHUB_ENV
           echo "branch=${GITHUB_REF#refs/heads/}" >> $GITHUB_ENV
-      - name: Slack webhook channel notifications
+      - name: Slack notification
         uses: tiloio/slack-webhook-action@v1.1.2
         with:
           slack_web_hook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
