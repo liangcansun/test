@@ -1,11 +1,11 @@
-name: 'build bch 24.0.0'
+name: 'build bch 24.1.1'
 on: workflow_dispatch
 
 # 需更改的位置一
 # 第二个需要更改的位置: context: ./10-bch/v24.0.0/
 env:
   major_version: '24'
-  minor_version: '0.0'
+  minor_version: '1.1'
 
 jobs:
   build:
