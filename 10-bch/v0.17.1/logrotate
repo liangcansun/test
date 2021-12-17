@@ -1,0 +1,6 @@
+${XCOIN_VOLUME}/debug.log ${XCOIN_VOLUME}/testnet3/debug.log {
+    daily
+    rotate 3
+    missingok
+    copytruncate
+}
