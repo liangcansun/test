@@ -9,7 +9,6 @@ env:
 
 jobs:
   build:
-    runs-on: self-hosted
     env:
       patch_version: ${{ github.run_number }}
       docker_registry_aliyun_beijing: registry.cn-beijing.aliyuncs.com
