@@ -9,6 +9,8 @@ void test(){
 }
 int main() {
     std::cout << "Hello, Wssorld各二分本地高度2113212说的是34323123sds!12312312313" << std::endl;
+    std::cout << "1" << std::endl;
+    std::cout << "2" << std::endl;
     thread t1(test);
     t1.join();
 
